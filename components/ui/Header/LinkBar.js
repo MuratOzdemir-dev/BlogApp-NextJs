@@ -5,7 +5,7 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const LinkBar = () => {
   return (
@@ -68,12 +68,13 @@ const LinkBar = () => {
             />
           </a>
         </div>
-        <div className="text-white">
+        <div className="flex items-center pr-2 text-white bg-gray-800 rounded focus-within:bg-gray-700">
           <input
             type="text"
-            className="p-2 text-sm bg-gray-800 outline-none focus:bg-gray-700 "
+            className="p-2 text-sm bg-transparent outline-none "
             placeholder="Arama"
           />
+          <FontAwesomeIcon icon={faSearch} className="cursor-pointer" />
         </div>
       </div>
     </div>

@@ -9,10 +9,10 @@ import { faEnvelope, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const LinkBar = () => {
   return (
-    <div className="py-4 bg-black font-josefin">
+    <div className="px-2 py-4 bg-black font-josefin">
       {/* Siyah background*/}
-      <div className="container flex items-center justify-between mx-auto">
-        <div className="flex gap-3">
+      <article className="container flex items-center justify-center mx-auto md:justify-between ">
+        <section className="flex gap-3">
           {/* Github İcon */}
           <a href="https://github.com/MuratOzdemir-dev" target="_blank">
             <FontAwesomeIcon
@@ -67,16 +67,17 @@ const LinkBar = () => {
               className="w-5 text-gray-400 transition-colors duration-300 cursor-pointer hover:text-white "
             />
           </a>
-        </div>
-        <div className="flex items-center pr-2 text-white bg-gray-800 rounded focus-within:bg-gray-700">
+        </section>
+        {/* Search Input Area */}
+        <section className="items-center hidden pr-2 text-white bg-gray-800 rounded md:flex focus-within:bg-gray-700">
           <input
             type="text"
             className="p-2 text-sm bg-transparent outline-none "
             placeholder="Arama"
           />
           <FontAwesomeIcon icon={faSearch} className="cursor-pointer" />
-        </div>
-      </div>
+        </section>
+      </article>
     </div>
   );
 };

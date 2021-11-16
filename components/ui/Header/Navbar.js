@@ -12,7 +12,7 @@ const Navbar = () => {
 
   return (
     <nav className="relative ">
-      <section className="flex items-center justify-center my-8 xl:my-16">
+      <section className="flex items-center justify-center mt-8 md:my-8 xl:my-16">
         <h1 className="text-3xl text-center lg:text-5xl xl:text-6xl">
           Murat Özdemir
         </h1>
@@ -26,14 +26,14 @@ const Navbar = () => {
         </div>
       </section>
       <ul
-        className={`bg-[#E6E6E6] overflow-hidden pb-8 transition-all md:bg-transparent md:flex md:h-full md:items-center md:justify-center md:gap-8 md:border-b md:container md:mx-auto ${
+        className={`bg-[#E6E6E6] overflow-hidden mb-8 transition-all md:pb-4 md:bg-transparent md:flex md:h-full md:items-center md:justify-center md:gap-8 md:border-b md:container md:mx-auto ${
           showMobilMenu ? "h-[92px]" : "h-0"
         }`}
       >
         <li>
           <Link href="/">
             <a
-              className={`uppercase pl-2 block py-2 text-center hover:text-black/90 transition-all text-sm xl:text-base md:p-0 ${
+              className={`uppercase pl-2 block py-2 text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
                 pathname === "/" ? "text-black/90" : "text-black/60"
               }`}
             >
@@ -45,7 +45,7 @@ const Navbar = () => {
         <li>
           <Link href="/contact">
             <a
-              className={`uppercase pl-2 block text-center hover:text-black/90 transition-all text-sm xl:text-base md:p-0 ${
+              className={`uppercase pl-2 block text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
                 pathname === "/contact" ? "text-black/90" : "text-black/60"
               }`}
             >
@@ -57,7 +57,7 @@ const Navbar = () => {
         <li>
           <Link href="/posts">
             <a
-              className={`uppercase pl-2 block py-2 text-center hover:text-black/90 transition-all text-sm xl:text-base md:p-0 ${
+              className={`uppercase pl-2 block py-2 text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
                 pathname === "/posts" ? "text-black/90" : "text-black/60"
               }`}
             >

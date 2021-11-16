@@ -11,7 +11,7 @@ const LinkBar = () => {
   return (
     <div className="px-2 py-4 bg-black font-josefin">
       {/* Siyah background*/}
-      <article className="container flex items-center justify-center mx-auto md:justify-between ">
+      <article className="container flex items-center justify-center px-4 mx-auto md:justify-between ">
         <section className="flex gap-3">
           {/* Github İcon */}
           <a href="https://github.com/MuratOzdemir-dev" target="_blank">
@@ -69,13 +69,16 @@ const LinkBar = () => {
           </a>
         </section>
         {/* Search Input Area */}
-        <section className="items-center hidden pr-2 text-white bg-gray-800 rounded md:flex focus-within:bg-gray-700">
+        <section className="items-center hidden pr-2 text-gray-300 bg-gray-800 rounded md:flex focus-within:bg-gray-700 ">
           <input
             type="text"
             className="p-2 text-sm bg-transparent outline-none "
             placeholder="Arama"
           />
-          <FontAwesomeIcon icon={faSearch} className="cursor-pointer" />
+          <FontAwesomeIcon
+            icon={faSearch}
+            className="text-gray-400 cursor-pointer hover:text-white"
+          />
         </section>
       </article>
     </div>

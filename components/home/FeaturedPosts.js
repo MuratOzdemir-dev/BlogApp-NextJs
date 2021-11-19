@@ -1,5 +1,5 @@
 const FeaturedPosts = () => {
-  return <div></div>;
+  return <div>Featured Posts</div>;
 };
 
 export default FeaturedPosts;

@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Header from "./Header/Header";
+import Footer from "./Footer";
+
 const Layout = (props) => {
   return (
     <>
@@ -13,7 +15,7 @@ const Layout = (props) => {
       </Head>
       <Header />
       <main>{props.children}</main>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };

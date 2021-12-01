@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Header from "./Header/Header";
-import Footer from "./Footer";
+import Footer from "./Footer/Footer";
 
 const Layout = (props) => {
   return (

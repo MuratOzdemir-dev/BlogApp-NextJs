@@ -43,18 +43,6 @@ const Navbar = () => {
         </li>
 
         <li>
-          <Link href="/contact">
-            <a
-              className={`uppercase pl-2 block text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
-                pathname === "/contact" ? "text-black/90" : "text-black/60"
-              }`}
-            >
-              İletişim
-            </a>
-          </Link>
-        </li>
-
-        <li>
           <Link href="/posts">
             <a
               className={`uppercase pl-2 block py-2 text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
@@ -62,6 +50,17 @@ const Navbar = () => {
               }`}
             >
               Postlar
+            </a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a
+              className={`uppercase pl-2 block text-center hover:text-black/90 transition-all duration-300 text-sm xl:text-base md:p-0 ${
+                pathname === "/contact" ? "text-black/90" : "text-black/60"
+              }`}
+            >
+              İletişim
             </a>
           </Link>
         </li>

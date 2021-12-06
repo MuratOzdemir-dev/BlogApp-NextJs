@@ -1,6 +1,10 @@
-const Profile = () => {
+const Profile = ({ dark }) => {
   return (
-    <div className="flex flex-col items-center justify-center max-w-screen-sm p-4 mx-auto text-center border rounded border-white/20">
+    <div
+      className={`flex flex-col items-center justify-center max-w-screen-sm p-4 mx-auto text-center border rounded border-[#e6e6e6] ${
+        dark && "border-white/20"
+      }`}
+    >
       <img
         src="/img/profile-pic.png"
         alt="Murat Özdemir Profile picture"

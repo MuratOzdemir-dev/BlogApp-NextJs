@@ -1,4 +1,4 @@
-const Profile = ({ dark }) => {
+const Profile = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-screen-sm p-4 mx-auto text-center border rounded border-white/20">
       <img

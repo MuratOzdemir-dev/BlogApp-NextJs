@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       fontFamily: {
         josefin: ["'Josefin Sans'", "sans-serif"],
+        smooch: ["Smooch", "cursive"],
       },
     },
   },

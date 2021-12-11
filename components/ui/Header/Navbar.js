@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="relative ">
       <section className="flex items-center justify-center mt-8 md:my-8 xl:my-16">
-        <h1 className="text-3xl text-center lg:text-5xl xl:text-6xl">
+        <h1 className="text-3xl text-center lg:text-5xl xl:text-8xl font-smooch">
           Murat Özdemir
         </h1>
         <div

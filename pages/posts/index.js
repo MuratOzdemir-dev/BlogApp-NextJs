@@ -1,3 +1,4 @@
+import Categories from "../../components/posts/Categories";
 import PostList from "../../components/posts/PostList";
 import Profile from "../../components/ui/Profile";
 import { data } from "../../dummyPosts";
@@ -9,9 +10,10 @@ const AllPostsPage = () => {
         <PostList posts={data} />
       </div>
       {/* Sidarbar */}
-      <div className="relative hidden top-1/3 lg:block lg:col-span-3 xl:col-span-2">
+      <aside className="hidden lg:flex lg:flex-col lg:justify-center lg:col-span-3 xl:col-span-2 lg:gap-8">
         <Profile />
-      </div>
+        <Categories />
+      </aside>
     </section>
   );
 };

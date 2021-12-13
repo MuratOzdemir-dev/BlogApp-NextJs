@@ -35,24 +35,19 @@ export const data = [
 ];
 
 export const categories = () => {
-  const result = [];
+  const listOfCategory = [];
+  const listWithCount = {};
 
-  for (const post of data) {
-    console.log("Dış döngü");
-    if (result.length === 0) {
-      console.log("İlk if döngü");
-      result.push({ category: post.category, count: 1 });
-    }
-    for (const item of result) {
-      console.log("iç döngü");
-      if (item.category === post.category) {
-        item.count += 1;
-      } else {
-        result.push({ category: post.category, count: 1 });
-      }
-    }
-  }
+  // Her postun kategoroisi listOfCategory adlı dizide tutuluyor.
+  data.map((post) => listOfCategory.push(post.category));
 
-  console.log("function:", result);
-  return result;
+  listOfCategory.forEach((element) => {
+    //Element bir string "Eğitim" gibi
+    if (Object.keys(listWithCount).includes(element)) {
+      listWithCount[element] += 1;
+    } else {
+      listWithCount[element] = 1;
+    }
+  });
+  return listWithCount;
 };

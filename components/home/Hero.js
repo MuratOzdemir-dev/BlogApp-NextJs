@@ -16,7 +16,7 @@ const Hero = ({ posts }) => {
         interval={5000}
       >
         {posts.map((item) => (
-          <CarouselItem item={item} key={item.postId} />
+          <CarouselItem item={item.data} key={item.data.slug} />
         ))}
       </Carousel>
     </div>

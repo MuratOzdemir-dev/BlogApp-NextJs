@@ -6,7 +6,7 @@ const CarouselItem = ({ item }) => {
     // Link olucak
     <div className="max-h-[540px] relative text-white cursor-pointer">
       <Image
-        src={item.imageSrc}
+        src={item.image}
         width={768}
         height={540}
         layout="responsive"

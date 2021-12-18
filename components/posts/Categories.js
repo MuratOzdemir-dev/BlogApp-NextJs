@@ -1,5 +1,5 @@
 import CategoryItem from "./CategoryItem";
-import { categories } from "../../dummyPosts";
+import { categories } from "../../helpers/post-util";
 
 const Categories = () => {
   const listOfCategories = categories();

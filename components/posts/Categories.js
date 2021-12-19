@@ -1,8 +1,8 @@
 import CategoryItem from "./CategoryItem";
 import { categories } from "../../helpers/post-util";
 
-const Categories = () => {
-  const listOfCategories = categories();
+const Categories = ({ posts }) => {
+  const listOfCategories = categories(posts);
   return (
     <div>
       <h3 className="pb-6 mb-2 text-gray-600 border-b-2">Categories</h3>

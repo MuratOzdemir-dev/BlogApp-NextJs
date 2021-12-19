@@ -48,8 +48,8 @@ export const getStaticProps = async () => {
     const allPosts = postFiles.map((post) => {
       return getPostData(post);
     });
-
-    return allPosts.sort((a, b) => (a.createdAt > b.createdAt ? -1 : 1));
+    return allPosts;
+    // return allPosts.sort((a, b) => (a.createdAt > b.createdAt ? -1 : 1));
   };
 
   const data = getAllPost();

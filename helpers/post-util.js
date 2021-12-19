@@ -1,5 +1,4 @@
-export const categories = () => {
-  const data = getAllPost();
+export const categories = (data) => {
   const listOfCategory = [];
   const listWithCount = {};
 

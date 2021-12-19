@@ -7,13 +7,13 @@ const PostSummary = ({ category, createdAt, commentCount, dark }) => {
       <span className="px-2 py-1 mr-4 text-sm font-light text-white bg-blue-600 rounded">
         {category}
       </span>
-      {/* <time className="pl-4 mr-4 text-sm font-light ">
+      <time className="pl-4 mr-4 text-sm font-light ">
         {createdAt.toLocaleString("tr-TR", {
           day: "numeric",
           month: "long",
           year: "numeric",
         })}
-      </time> */}
+      </time>
       <span className="pl-4 text-sm ">
         <FontAwesomeIcon icon={faComments} />
         <span className="ml-2 font-light">{commentCount}</span>

@@ -50,6 +50,7 @@ export const getStaticProps = () => {
     props: {
       data,
     },
+    revalidate: 3600,
   };
 };
 

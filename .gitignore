@@ -34,3 +34,8 @@ yarn-error.log*
 .vercel
 
 todo.md
+/data/
+data/second-blog.md
+data/second-blog.md
+data/third-blog.md
+data/first-blog.md

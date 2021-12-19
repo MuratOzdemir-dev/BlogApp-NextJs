@@ -1,9 +1,9 @@
 ---
-slug: "second-blog"
+slug: "react-nedir"
 createdAt: "18/12/2025"
 commentCount: 3
 category: "Life"
-title: "First Blog"
+title: "React Nedir?"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1637203222/Blog/1_hvff4g.jpg"
 ---
 

@@ -1,5 +1,5 @@
 ---
-slug: "first-blog"
+slug: "nextjs-nedir"
 createdAt: "18/12/2021"
 commentCount: 3
 category: "Development"

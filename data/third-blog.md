@@ -1,9 +1,9 @@
 ---
-slug: "third-blog"
+slug: "tailwind-nedir"
 createdAt: "18/12/2025"
 commentCount: 3
 category: "Development"
-title: "First Blog"
+title: "Tailwind Nedir?"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1637203216/Blog/3_yw2di6.jpg"
 ---
 

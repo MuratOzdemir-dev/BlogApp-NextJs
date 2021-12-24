@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
+import ScrollButton from "./ScrollButton";
 
 const Layout = (props) => {
   return (
@@ -16,6 +17,7 @@ const Layout = (props) => {
       <Header />
       <main>{props.children}</main>
       <Footer />
+      <ScrollButton />
     </>
   );
 };

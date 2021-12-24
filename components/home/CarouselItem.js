@@ -8,9 +8,10 @@ const CarouselItem = ({ item }) => {
       <div className="max-h-[540px] relative text-white cursor-pointer">
         <Image
           src={item.image}
-          width={768}
-          height={540}
+          width={1920}
+          height={720}
           layout="responsive"
+          objectFit="cover"
           alt={item.title}
         />
         <div className="absolute text-left left-2 md:left-16 pr-4 md:p-0 top-1/2 md:max-w-[50%] lg:max-w-[33%] -translate-y-1/2">

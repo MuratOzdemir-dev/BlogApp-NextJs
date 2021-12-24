@@ -5,12 +5,13 @@ import PostSummary from "../ui/PostSummary";
 const HeroPostItem = ({ post }) => {
   return (
     <Link href={`/posts/${post.data.slug}`}>
-      <div className="relative drop-shadow-md cursor-pointer">
+      <div className="relative cursor-pointer drop-shadow-md">
         <Image
           src={post.data.image}
           width={430}
           height={430}
           layout="responsive"
+          objectFit="cover"
         />
         <div className="absolute right-0 text-white -translate-y-1/2 left-2 lg:left-4 top-1/2">
           <PostSummary

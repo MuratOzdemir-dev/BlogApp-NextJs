@@ -2,12 +2,13 @@ import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import ReactMarkdown from "react-markdown";
+
 const PostDetailPage = ({ post }) => {
   if (!post) {
     return <>Loading...</>;
   }
   return (
-    <div className="container mx-auto markdown">
+    <div className="container mx-auto markdown post">
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </div>
   );

@@ -12,6 +12,7 @@ const PostItem = ({ post }) => {
           width={430}
           height={300}
           layout="responsive"
+          objectFit="cover"
         />
         <div className="px-4 mt-6">
           <PostSummary

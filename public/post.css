@@ -1,0 +1,30 @@
+.post h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem 0;
+  text-decoration: underline;
+}
+
+.post h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.post p {
+  color: rgb(88, 92, 97);
+  text-indent: 25px;
+  line-height: 1.8;
+}
+
+.post img {
+  margin: 2rem auto;
+  border-radius: 1rem;
+}
+
+.post * {
+  font-family: "Josefin Sans", sans-serif;
+}

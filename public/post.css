@@ -28,3 +28,7 @@ h6 {
 .post * {
   font-family: "Josefin Sans", sans-serif;
 }
+
+.scrollButton {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

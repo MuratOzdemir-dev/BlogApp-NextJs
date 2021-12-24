@@ -42,8 +42,9 @@ export const getStaticProps = () => {
     const allPosts = postFiles.map((post) => {
       return getPostData(post);
     });
-    return allPosts;
-    // return allPosts.sort((a, b) => (a.createdAt > b.createdAt ? -1 : 1));
+    return allPosts.sort((a, b) =>
+      a.data.createdAt > b.data.createdAt ? -1 : 1
+    );
   };
   const data = getAllPost();
   return {

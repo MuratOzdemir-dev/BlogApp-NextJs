@@ -4,7 +4,6 @@ import matter from "gray-matter";
 
 import Hero from "../components/home/Hero";
 import HeroPosts from "../components/home/HeroPosts";
-// import { data } from "../dummyPosts";
 
 const HomePage = ({ data }) => {
   let carouselItems;
@@ -48,8 +47,10 @@ export const getStaticProps = async () => {
     const allPosts = postFiles.map((post) => {
       return getPostData(post);
     });
-    return allPosts;
-    // return allPosts.sort((a, b) => (a.createdAt > b.createdAt ? -1 : 1));
+    // return allPosts;
+    return allPosts.sort((a, b) =>
+      a.data.createdAt > b.data.createdAt ? -1 : 1
+    );
   };
 
   const data = getAllPost();

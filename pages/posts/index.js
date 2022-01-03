@@ -5,7 +5,6 @@ import matter from "gray-matter";
 import Categories from "../../components/posts/Categories";
 import PostList from "../../components/posts/PostList";
 import Profile from "../../components/ui/Profile";
-// import { data } from "../../dummyPosts";
 
 const AllPostsPage = (props) => {
   const { data } = props;
@@ -14,7 +13,6 @@ const AllPostsPage = (props) => {
       <div className="lg:col-span-9 xl:col-span-10">
         <PostList posts={data} />
       </div>
-      {/* Sidarbar */}
       <aside className="hidden lg:flex lg:flex-col lg:justify-center lg:col-span-3 xl:col-span-2 lg:gap-8">
         <Profile />
         <Categories posts={data} />

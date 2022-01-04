@@ -13,9 +13,11 @@ const Navbar = () => {
   return (
     <nav className="relative ">
       <section className="flex items-center justify-center mt-8 md:my-8 xl:my-16">
-        <h1 className="text-3xl text-center lg:text-5xl xl:text-8xl font-smooch">
-          Murat Özdemir
-        </h1>
+        <Link href="/">
+          <h1 className="text-3xl text-center cursor-pointer lg:text-5xl xl:text-8xl font-smooch">
+            Murat Özdemir
+          </h1>
+        </Link>
         <div
           className="absolute flex flex-col gap-1 cursor-pointer right-4 md:hidden"
           onClick={toggleShowMobilMenuHanler}

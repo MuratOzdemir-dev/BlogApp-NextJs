@@ -17,6 +17,7 @@ const ContactPage = () => {
                 id="name"
                 className="p-2 border rounded focus:outline-none focus:caret-green-700"
                 autoComplete="off"
+                required
               />
             </div>
             <div className="flex flex-col w-full gap-2">
@@ -40,7 +41,7 @@ const ContactPage = () => {
                 type="email"
                 id="email"
                 className="p-2 border rounded focus:outline-none focus:caret-green-700"
-                autoComplete="off"
+                required
               />
             </div>
           </div>
@@ -50,11 +51,21 @@ const ContactPage = () => {
               Mesaj
             </label>
             <textarea
+              className="p-2 font-light border rounded md:resize-y focus:outline-none focus:caret-green-700 resize-none md:min-h-[100px]"
               id="message"
               rows={7}
-              className="p-2 font-light border rounded resize-y focus:outline-none focus:caret-green-700"
+              spellCheck="false"
               autoComplete="off"
+              required
             />
+          </div>
+          <div className="flex justify-center md:justify-start">
+            <button
+              type="submit"
+              className="px-4 py-2 my-4 text-white transition-all bg-blue-600 rounded hover:bg-blue-500"
+            >
+              Mesajı Gönder
+            </button>
           </div>
         </form>
       </div>

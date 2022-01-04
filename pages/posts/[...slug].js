@@ -1,14 +1,18 @@
+import { useRouter } from "next/router";
 import fs from "fs";
 import matter from "gray-matter";
 import path from "path";
 import ReactMarkdown from "react-markdown";
 
 const PostDetailPage = ({ post }) => {
-  if (!post) {
-    return <>Loading...</>;
+  // create router.isFallback div
+  const router = useRouter();
+  if (router.isFallback) {
+    return <p className="m-4 text-center">Loading...</p>;
   }
+
   return (
-    <div className="container mx-auto markdown post">
+    <div className="container mx-auto my-8 post">
       <ReactMarkdown>{post.content}</ReactMarkdown>
     </div>
   );

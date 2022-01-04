@@ -10,7 +10,7 @@ const Footer = () => {
 
         <p className="mt-4 text-center md:mt-12 text-white/60 md:col-span-full">
           Copyright ©2021 All rights reserved | This site is made with ❤️ by
-          <span className="font-smooch text-red-600 text-lg">
+          <span className="text-lg text-red-600 font-smooch">
             {" "}
             Murat Özdemir
           </span>

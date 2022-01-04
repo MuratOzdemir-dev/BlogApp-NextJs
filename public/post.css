@@ -32,3 +32,8 @@ h6 {
 .scrollButton {
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
 }
+
+.post a {
+  color: rgb(26, 27, 29);
+  text-decoration: underline;
+}

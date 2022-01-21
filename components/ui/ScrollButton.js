@@ -28,7 +28,7 @@ const ScrollButton = () => {
     <div
       ref={buttonRef}
       onClick={scrollTop}
-      className="fixed z-20 hidden w-6 h-6 bg-blue-600 opacity-0 cursor-pointer scrollButton bottom-12 right-12"
+      className="fixed z-20 hidden w-6 h-6 bg-violet-600 opacity-0 cursor-pointer scrollButton bottom-12 right-12 [clip-path:polygon(50%_0%,_0%_100%,_100%_100%)]"
     ></div>
   );
 };

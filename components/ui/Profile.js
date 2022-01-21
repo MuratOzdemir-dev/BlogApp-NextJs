@@ -19,7 +19,7 @@ const Profile = ({ dark }) => {
       </p>
       <a
         href="mailto:mrtozdmr92@gmail.com"
-        className="px-4 py-2 m-4 font-light text-white transition-all bg-blue-600 rounded hover:bg-blue-500"
+        className="px-4 py-2 m-4 font-light text-white transition-all rounded bg-violet-600 hover:bg-violet-500"
       >
         İletişim
       </a>

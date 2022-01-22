@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Head from "next/head";
 
 import Hero from "../components/home/Hero";
 import HeroPosts from "../components/home/HeroPosts";
@@ -17,14 +18,23 @@ const HomePage = ({ data }) => {
   }
 
   return (
-    <section className="container mx-auto">
-      <Hero posts={carouselItems} />
-      <h2 className="pb-4 my-8 text-2xl text-center uppercase border-b md:col-span-2 lg:col-span-3">
-        Son Postlar
-      </h2>
+    <>
+      <Head>
+        <meta
+          name="description"
+          content="Yazılım ile alakalı güncel yazılar."
+        />
+        <title>Murat Ozdemir Blog</title>
+      </Head>
+      <section className="container mx-auto">
+        <Hero posts={carouselItems} />
+        <h2 className="pb-4 my-8 text-2xl text-center uppercase border-b md:col-span-2 lg:col-span-3">
+          Son Postlar
+        </h2>
 
-      <HeroPosts posts={posts} />
-    </section>
+        <HeroPosts posts={posts} />
+      </section>
+    </>
   );
 };
 

@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import Head from "next/head";
 
 import Categories from "../../components/posts/Categories";
 import PostList from "../../components/posts/PostList";
@@ -9,15 +10,21 @@ import Profile from "../../components/ui/Profile";
 const AllPostsPage = (props) => {
   const { data } = props;
   return (
-    <section className="container px-4 mx-auto lg:grid lg:grid-cols-12 lg:gap-4 xl:gap-8">
-      <div className="lg:col-span-9 xl:col-span-10">
-        <PostList posts={data} />
-      </div>
-      <aside className="hidden lg:flex lg:flex-col lg:justify-center lg:col-span-3 xl:col-span-2 lg:gap-8">
-        <Profile />
-        <Categories posts={data} />
-      </aside>
-    </section>
+    <>
+      <Head>
+        <title>Postlar</title>
+        <meta name="description" content="Benimle iletişime geçebilirsiniz." />
+      </Head>
+      <section className="container px-4 mx-auto lg:grid lg:grid-cols-12 lg:gap-4 xl:gap-8">
+        <div className="lg:col-span-9 xl:col-span-10">
+          <PostList posts={data} />
+        </div>
+        <aside className="hidden lg:flex lg:flex-col lg:justify-center lg:col-span-3 xl:col-span-2 lg:gap-8">
+          <Profile />
+          <Categories posts={data} />
+        </aside>
+      </section>
+    </>
   );
 };
 

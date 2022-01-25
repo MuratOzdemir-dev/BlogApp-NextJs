@@ -1,7 +1,6 @@
 ---
 slug: "tailwind-nedir?"
 createdAt: "04/01/2022"
-commentCount: 3
 category: "Development"
 title: "Tailwind Nedir?"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1641293176/Blog/tailwind-thumb_g61fer.jpg"

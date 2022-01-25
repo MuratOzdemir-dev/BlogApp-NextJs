@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Profile = ({ dark }) => {
   return (
     <div
@@ -11,7 +13,7 @@ const Profile = ({ dark }) => {
         className="relative w-24 rounded-full -top-16"
       />
       <h2 className="-mt-12 text-xl text-white">Murat Özdemir</h2>
-      <p className="mt-4 font-light text-gray-400">
+      <p className="mt-4 font-light text-gray-400 ">
         Merhaba Ben Murat. Web geliştirmeyi çok seven, keyif alan ve bu yüzden
         kendini geliştirmek için bu site gibi projeler yapan, bir garip
         developer adayıyım. Geri dönüşler benim için çok önemli, vakit ayırıp
@@ -25,6 +27,14 @@ const Profile = ({ dark }) => {
       </a>
     </div>
   );
+};
+
+Profile.propTypes = {
+  dark: PropTypes.bool,
+};
+
+Profile.defaultProps = {
+  dark: false,
 };
 
 export default Profile;

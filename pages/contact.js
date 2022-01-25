@@ -9,9 +9,10 @@ const ContactPage = () => {
         <title>İletişim</title>
         <meta name="description" content="Benimle iletişime geçebilirsiniz." />
       </Head>
-      <section className="container px-4 mx-auto my-8 lg:grid lg:grid-cols-12 lg:gap-4 xl:gap-8">
+      <section className="container px-4 mx-auto my-8 lg:grid lg:grid-cols-12 lg:gap-4 xl:gap-8 min-h-[600px]">
         <div className="lg:col-span-9 xl:col-span-10">
-          <h1 className="my-8 text-3xl">İletişim</h1>
+          <h1 className="my-8 text-3xl dark:text-slate-200">İletişim</h1>
+          <div></div>
           <ContactForm />
         </div>
 

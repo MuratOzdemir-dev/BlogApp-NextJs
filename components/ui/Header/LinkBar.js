@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -5,13 +6,16 @@ import {
   faGithub,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope, faSearch } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { ThemeContext } from "../../../context/themeContext";
 
 const LinkBar = () => {
+  const theme = useContext(ThemeContext);
+
   return (
-    <div className="px-2 py-4 bg-black font-josefin">
+    <div className="px-2 py-4 bg-black font-josefin md:fixed md:w-full md:top-0 md:z-20">
       {/* Siyah background*/}
-      <article className="container flex items-center justify-center px-4 mx-auto md:justify-between ">
+      <article className="container flex items-center justify-center px-4 mx-auto md:justify-between min-h-[32px]">
         <section className="flex gap-3">
           {/* Github İcon */}
           <a href="https://github.com/MuratOzdemir-dev" target="_blank">
@@ -68,18 +72,24 @@ const LinkBar = () => {
             />
           </a>
         </section>
-        {/* Search Input Area */}
-        <section className="items-center hidden pr-2 text-gray-300 bg-gray-800 rounded md:flex focus-within:bg-gray-700 ">
-          <input
-            type="text"
-            className="p-2 text-sm bg-transparent outline-none "
-            placeholder="Arama"
-          />
-          <FontAwesomeIcon
-            icon={faSearch}
-            className="text-gray-400 cursor-pointer hover:text-white"
-          />
-        </section>
+        <div
+          className="absolute flex items-center w-5 cursor-pointer right-8 md:static"
+          onClick={theme.changeTheme}
+        >
+          {theme.darkMode ? (
+            <FontAwesomeIcon
+              icon={faSun}
+              size="lg"
+              className="text-gray-400 transition-colors duration-300 cursor-pointer hover:text-white "
+            />
+          ) : (
+            <FontAwesomeIcon
+              icon={faMoon}
+              size="lg"
+              className="text-gray-400 transition-colors duration-300 cursor-pointer hover:text-white "
+            />
+          )}
+        </div>
       </article>
     </div>
   );

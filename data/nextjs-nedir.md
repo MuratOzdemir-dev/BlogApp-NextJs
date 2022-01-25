@@ -1,7 +1,6 @@
 ---
 slug: "nextjs-nedir"
 createdAt: "18/12/2021"
-commentCount: 3
 category: "Development"
 title: "NextJs Nedir?"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1641294548/Blog/next_kf5dzb.png"

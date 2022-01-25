@@ -1,7 +1,6 @@
 ---
 slug: "react-dunyasina-giris"
-createdAt: "18/12/2027"
-commentCount: 3
+createdAt: "15/12/2021"
 category: "Life"
 title: "React.js Dünyasına Giriş"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1640342416/Blog/react_xep76u.png"

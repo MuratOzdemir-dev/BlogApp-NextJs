@@ -1,11 +1,14 @@
 import "tailwindcss/tailwind.css";
 import Layout from "../components/ui/Layout";
+import ThemeContextProvider from "../context/themeContext";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
-      <Component {...pageProps} />
-    </Layout>
+    <ThemeContextProvider>
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeContextProvider>
   );
 }
 

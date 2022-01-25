@@ -1,7 +1,6 @@
 ---
 slug: "kısaca-html5"
 createdAt: 21/01/2022
-commentCount: 0
 category: "Frontend"
 title: "Kısaca HTML5"
 image: "https://res.cloudinary.com/aintisar/image/upload/v1642771232/Blog/html5_ollbmv.png"

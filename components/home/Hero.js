@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
@@ -21,6 +22,25 @@ const Hero = ({ posts }) => {
       </Carousel>
     </div>
   );
+};
+
+Hero.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.shape({
+        slug: PropTypes.string,
+        createdAt: PropTypes.string,
+        category: PropTypes.string,
+        title: PropTypes.string,
+        image: PropTypes.string,
+      }),
+      content: PropTypes.string,
+    })
+  ).isRequired,
+};
+
+Hero.defaultProps = {
+  data: [],
 };
 
 export default Hero;

@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
+import PropTypes from "prop-types";
 
 import Hero from "../components/home/Hero";
 import HeroPosts from "../components/home/HeroPosts";
@@ -28,7 +29,7 @@ const HomePage = ({ data }) => {
       </Head>
       <section className="container mx-auto">
         <Hero posts={carouselItems} />
-        <h2 className="pb-4 my-8 text-2xl text-center uppercase border-b md:col-span-2 lg:col-span-3">
+        <h2 className="pb-4 my-8 text-2xl text-center uppercase border-b md:col-span-2 lg:col-span-3 dark:text-slate-200">
           Son Postlar
         </h2>
 
@@ -36,6 +37,25 @@ const HomePage = ({ data }) => {
       </section>
     </>
   );
+};
+
+HomePage.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.shape({
+        slug: PropTypes.string,
+        createdAt: PropTypes.string,
+        category: PropTypes.string,
+        title: PropTypes.string,
+        image: PropTypes.string,
+      }),
+      content: PropTypes.string,
+    })
+  ).isRequired,
+};
+
+HomePage.defaultProps = {
+  data: [],
 };
 
 export const getStaticProps = async () => {

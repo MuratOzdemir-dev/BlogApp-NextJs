@@ -2,13 +2,13 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import Head from "next/head";
+import PropTypes from "prop-types";
 
 import Categories from "../../components/posts/Categories";
 import PostList from "../../components/posts/PostList";
 import Profile from "../../components/ui/Profile";
 
-const AllPostsPage = (props) => {
-  const { data } = props;
+const AllPostsPage = ({ data }) => {
   return (
     <>
       <Head>
@@ -26,6 +26,25 @@ const AllPostsPage = (props) => {
       </section>
     </>
   );
+};
+
+AllPostsPage.propTypes = {
+  data: PropTypes.arrayOf(
+    PropTypes.shape({
+      data: PropTypes.shape({
+        slug: PropTypes.string,
+        createdAt: PropTypes.string,
+        category: PropTypes.string,
+        title: PropTypes.string,
+        image: PropTypes.string,
+      }),
+      content: PropTypes.string,
+    })
+  ).isRequired,
+};
+
+AllPostsPage.defaultProps = {
+  data: [],
 };
 
 export const getStaticProps = () => {

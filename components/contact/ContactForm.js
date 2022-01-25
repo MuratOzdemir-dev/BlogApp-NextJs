@@ -33,7 +33,7 @@ const ContactForm = () => {
 
   return (
     <form className="relative max-w-5xl mr-auto" onSubmit={submitHandler}>
-      <div className="flex flex-col justify-between gap-4 mb-4 inputs lg:flex-row lg:gap-8">
+      <div className="flex flex-col justify-between gap-4 mb-12 inputs lg:flex-row lg:gap-8">
         <div className="flex flex-col w-full gap-2">
           {/* Name Block */}
           <label className="text-gray-500" htmlFor="name">
@@ -42,7 +42,7 @@ const ContactForm = () => {
           <input
             type="text"
             id="name"
-            className="p-2 border rounded focus:outline-none focus:caret-green-700"
+            className="p-2 border rounded focus:outline-none focus:caret-violet-600 dark:bg-gray-800 dark:text-slate-200 dark:border-gray-700"
             autoComplete="off"
             required
           />
@@ -56,7 +56,7 @@ const ContactForm = () => {
             type="tel"
             id="phone"
             name="phone"
-            className="p-2 border rounded focus:outline-none focus:caret-green-700"
+            className="p-2 border rounded focus:outline-none focus:caret-violet-600 dark:bg-gray-800 dark:text-slate-200 dark:border-gray-700"
             autoComplete="off"
           />
         </div>
@@ -69,18 +69,18 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
-            className="p-2 border rounded focus:outline-none focus:caret-green-700"
+            className="p-2 border rounded focus:outline-none focus:caret-violet-600 dark:bg-gray-800 dark:text-slate-200 dark:border-gray-700"
             required
           />
         </div>
       </div>
-      <div className="flex flex-col gap-2">
+      <div className="flex flex-col gap-2 mb-8">
         {/* Email Block */}
         <label className="text-gray-500" htmlFor="message">
           *Mesaj
         </label>
         <textarea
-          className="p-2 font-light border rounded md:resize-y focus:outline-none focus:caret-green-700 resize-none md:min-h-[100px]"
+          className="p-2 font-light border rounded md:resize-y focus:outline-none focus:caret-violet-600 dark:bg-gray-800 dark:text-slate-200 dark:border-gray-700 resize-none md:min-h-[100px]"
           id="message"
           name="message"
           rows={7}

@@ -1,7 +1,7 @@
+import Head from "next/head";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import Head from "next/head";
 import PropTypes from "prop-types";
 
 import Hero from "../components/home/Hero";
